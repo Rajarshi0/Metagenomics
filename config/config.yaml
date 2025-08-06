@@ -1,0 +1,14 @@
+# Sample information
+samples:
+  - sample1
+  - sample2
+
+# Database paths
+kraken2_db: "/path/to/kraken2/database"
+metaphlan_db: "/path/to/metaphlan/database"
+humann_db: "/path/to/humann/database"
+
+# Analysis parameters
+threads: 4
+min_quality_score: 20
+min_length: 50
