@@ -26,4 +26,15 @@ conda install -c bioconda \
 # Create directory structure
 mkdir -p {data,results,logs,resources,config}
 
+# Download Kraken2 database (MiniKraken2_v1_8GB for testing, can be changed to full database)
+wget https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20221209.tar.gz -P resources/
+tar -xzf resources/k2_standard_08gb_20221209.tar.gz -C resources/
+
+# Download MetaPhlAn database
+metaphlan --install --bowtie2db resources/metaphlan_databases/
+
+# Download HUMANn database (ChocoPhlAn)
+humann_databases --download chocophlan full resources/humann_databases/
+humann_databases --download uniref uniref90_diamond resources/humann_databases/
+
 echo "Setup completed successfully!"

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Snakemake
+.snakemake/
+.conda/
+
+# Results and logs
+results/*
+!results/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Data
+data/*
+!data/.gitkeep
+!data/test_samples/
+
+# Resources
+resources/*
+!resources/.gitkeep
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# System
+.DS_Store
+.env
+.venv
+*.swp
